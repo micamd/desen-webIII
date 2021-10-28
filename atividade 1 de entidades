@@ -1,0 +1,87 @@
+Vendedor.java
+import java.time.LocalDate;
+
+public class Vendedor {
+
+    public String nome;
+    public String idade;
+    public String telefone;
+    public String rg;
+    public LocalDate dataDeNascimento;
+    public LocalDate dataDeAdmissao;
+    public float salario;
+    public float comissao;
+    
+}
+.........................................
+venda.java
+import java.time.LocalDate;
+
+public class venda {
+    
+    public String nomeDocliente;
+    public LocalDate dataDaVenda;
+    public String entrega;
+    public String quatidadeDePoduto;
+    public String quantidadenoestoque;
+    public String totalDaVenda;
+    public String formasDePagamento; 
+}
+.........................................
+transportadora.java
+import java.time.LocalDate;
+
+public class transportadora {
+
+    public String nomemotorista;
+    public String nomeDaTransportadora;
+    public LocalDate dataDaentrega;
+    public LocalDate horarioDaEntrega;
+    
+}
+.........................................
+cliente.java
+import java.time.LocalDate;
+
+public class cliente {
+    
+    public String nome;
+    public String idade;
+    public String telefone;
+    public String email;
+    public String endereco;
+    public LocalDate dataDeNascimento;
+    public LocalDate dataDeCadastro;
+    public String rg;
+}
+.........................................
+produto.java
+import java.time.LocalDate;
+
+public class produto {
+
+    public String nome;
+    public String descricao;
+    public String cor;
+    public String formato;
+    public LocalDate dataDeValidade;
+    public LocalDate dataDeFabricacao;
+    public String composicaoDoProduto;
+    public String quantdade;
+
+}
+..........................................
+fornecedor.java
+import java.time.LocalDate;
+
+public class fornecedor {
+
+    public String nome;
+    public String endereco;
+    public String telefone;
+    public String cnpj;
+    public LocalDate venda;
+    public String valorDoProduto;
+
+    
+}
