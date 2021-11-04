@@ -1,0 +1,123 @@
+App.java
+
+public class App {
+    public static void main(String[] args) {
+
+        CalculoDeFisica CalculoDeFisica1 = new CalculoDeFisica();
+
+       float massa = 56.8f;
+       float gravidade = 23.9f;
+
+       float resultado = CalculoDeFisica1.forcaPeso(massa, gravidade);
+       System.out.println("O resultado de P é:" + " " +  resultado);
+
+    
+       CalculoDeFisica CalculoDeFisica2 = new CalculoDeFisica();
+
+       float velocidade = 8.8f;
+       float trajetoria = 23.9f;
+
+       float resultado2 = CalculoDeFisica2.forcaElastica(velocidade * 2, trajetoria);
+       System.out.println("O resultado de FC é:" + " " +  resultado2);
+
+       CalculoDeFisica CalculoDeFisica3 = new CalculoDeFisica();
+
+       float tempoI = 2f;
+       float tempoF = 10f;
+       float forca = 5f;
+
+       float resultado3 = CalculoDeFisica3.velocidadeMedia(tempoI - tempoF, forca);
+       System.out.println("O resultado de I é:" + " " +  resultado3);
+
+       CalculoDeFisica CalculoDeFisica4 = new CalculoDeFisica();
+
+       float massa2 = 8.8f;
+       float aceleracao = 23.9f;
+
+       float resultado4 = CalculoDeFisica4.forcaElastica(massa2, aceleracao);
+       System.out.println("O resultado de F é:" + " " +  resultado4);
+
+
+       CalculoDeFisica CalculoDeFisica5 = new CalculoDeFisica();
+
+       float espacoPercorridoI = 55f;
+       float espacoPercorridoF = 25f;
+       float tempoIn = 25f;
+       float tempoFi = 50f;
+
+       float resultado5 = CalculoDeFisica5.velocidadeMedia(tempoIn - tempoFi, espacoPercorridoF - espacoPercorridoI);
+       System.out.println("O resultado de VM é:" + " " +  resultado5);
+
+       CalculoDeFisica CalculoDeFisica6 = new CalculoDeFisica();
+
+       float posicaoInicial = 10f;
+       float velocidade1 = 10f;
+       float tempo1= 5f;
+
+       float resultado6 = CalculoDeFisica6.MRU(posicaoInicial, velocidade1, tempo1);
+       System.out.println("O resultado de S é:" + " " +  resultado6);
+
+       CalculoDeFisica CalculoDeFisica7 = new CalculoDeFisica();
+
+       float posicaoInicial2 = 2f;
+       float velocidade2 = 10f;
+       float tempo2 = 5f;
+       float aceleraçao = 10f;
+       float tempo3 = 55f;
+
+       float resultado7 = CalculoDeFisica7.MRUV(posicaoInicial2, velocidade2, tempo2, aceleraçao, tempo3 * 2);
+       System.out.println("O resultado de S é:" + " " +  resultado7);
+       
+    } 
+    
+       
+    }
+
+.........................................................................................................................................
+calculoDeFisica.java
+
+public class CalculoDeFisica {
+
+    public float forcaPeso(float massa, float gravidade) {
+         
+        return massa * gravidade;
+
+      }
+
+      public float forcaCentripeta(float velocidade, float trajetoria) {
+         
+        return velocidade / trajetoria;
+
+      }
+
+      public float impulso(float forca, float tempo) {
+         
+        return forca * tempo;
+
+      }
+
+      public float forcaElastica(float aceleracao, float massa2) {
+         
+        return massa2 * aceleracao;
+
+      }
+
+      public float velocidadeMedia(float espacoPercorrido, float tempo) {
+         
+        return espacoPercorrido * tempo;
+
+      }
+
+      public float MRU(float posicaoInicial, float velocidade1, float tempo1) {
+         
+        return posicaoInicial + velocidade1 * tempo1;
+
+      }
+
+      public float MRUV(float posicaoInicial2, float velocidade2, float tempo2, float aceleraçao, float tempo3) {
+         
+        return posicaoInicial2 + velocidade2 * tempo2 + aceleraçao * tempo3 / 2;
+
+      }
+
+}
