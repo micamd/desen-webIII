@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	scroll-behavior:smooth;
+}
+.geral{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.topo{
+	width:100%;
+	height:280px;
+	background-color: #1d1c1c;
+	font-family:cursive;
+
+}
+.topo h1{
+	color:#fff;
+	text-align:center;
+	line-height:280px;
+	font-size:4vw;
+}
+.menu{
+	width:100%;
+	height:45px;
+	background-color:#061257;
+	position:sticky;
+	top:0;
+	text-align:center;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#061257;
+  text-align:center;
+}
+
+.menu ul li {
+  float: left;
+  text-align:center;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align:center;
+}
+
+.menu ul li a:hover {
+  background-color: #008080;
+}
+.conteudo1, .conteudo2, .conteudo3, .conteudo4, .conteudo5{
+	width:100%;
+	height:750px;
+	background-color: #e7e3e3;
+}
+.body{
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+}
+#items{
+	display: flex;
+    overflow-x: auto;
+	scroll-snap-type: x mandatory;
+}
+.item{
+	flex: none;
+	width: 100%;
+	height: 400px;
+}
+Img{
+	width: 100%;
+	height: 100%;
+}
+figure {
+	float: right;
+	width: 30%;
+	text-align:center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	border: thin rgb(253, 252, 252) solid;
+	margin: 0.5em;
+	padding: 0.5em;
+  }
+  img.scaled {
+	width: 50%;
+  }
+  p{
+	text-align:justify;
+  }
+  .button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button5 {background-color: #555555;}
+
+h2 { 
+	font-family: arial; 
+}
+.menu2{
+	width:100%;
+	height:45px;
+	background-color:#061257;
+	position:sticky;
+	top:0;
+	text-align:center;
+}
+.menu2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#020216;
+  text-align:center;
+}
+
+.menu2 ul li {
+  float: left;
+  text-align:center;
+}
+
+.menu2 ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align:center;
+}
+
+.menu2 ul li a:hover {
+  background-color: #8eebeb;
+}
+p{
+  text-align:center;
+}
